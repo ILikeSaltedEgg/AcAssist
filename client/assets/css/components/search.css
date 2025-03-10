@@ -1,0 +1,124 @@
+/* Search Component Styles */
+
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#search-form {
+    display: flex;
+    position: relative;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    border: none;
+    box-shadow: var(--shadow-md);
+    font-size: 1rem;
+    padding-right: 50px;
+}
+
+#search-form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-form button img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: opacity var(--transition-fast);
+}
+
+#search-form button:hover img {
+    opacity: 1;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 100;
+    display: none;
+}
+
+.search-results.active {
+    display: block;
+}
+
+.search-result-item {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color var(--transition-fast);
+    display: flex;
+    align-items: center;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background-color: var(--background-light);
+}
+
+.search-result-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-light);
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: var(--spacing-md);
+}
+
+.search-result-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-result-content {
+    flex-grow: 1;
+}
+
+.search-result-content h4 {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.search-result-content p {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.search-result-university {
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.no-results {
+    padding: var(--spacing-lg);
+    text-align: center;
+    color: var(--text-light);
+}

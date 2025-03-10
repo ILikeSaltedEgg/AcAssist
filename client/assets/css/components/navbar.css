@@ -1,0 +1,128 @@
+/* Navbar Component Styles */
+
+.main-header {
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav li {
+    margin: 0 var(--spacing-md);
+    position: relative;
+}
+
+.main-nav a {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: var(--spacing-sm) 0;
+    display: block;
+    transition: color var(--transition-fast); /* Only transition the color */
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.main-nav a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    text-decoration: none; /* Ensure no underline for active state */
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    min-width: 250px;
+    box-shadow: var(--shadow-md);
+    border-radius: var(--border-radius-sm);
+    z-index: 1;
+    padding: var(--spacing-sm) 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    color: var(--text-color);
+    font-weight: normal;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--background-light);
+    color: var(--primary-color);
+}
+
+/* Mobile menu */
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    position: relative;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--text-color);
+    border-radius: 3px;
+    transition: all var(--transition-fast);
+}
+
+.mobile-menu-toggle span:nth-child(1) {
+    top: 0;
+}
+
+.mobile-menu-toggle span:nth-child(2) {
+    top: 10px;
+}
+
+.mobile-menu-toggle span:nth-child(3) {
+    top: 20px;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    top: 10px;
+    transform: rotate(45deg);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acassist - University Help Wiki</title>
+    <link rel="stylesheet" href="../assets/css/components/search.css">
+    <link rel="stylesheet" href="../assets/css/main.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+<div class="search-container">
+    <form class="search-form">
+        <div class="search-input-wrapper">
+            <input type="text" class="search-input" placeholder="Search for universities, documents, or procedures...">
+            <button type="submit" class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        
+        <div class="search-filters">
+            <select name="category" id="search-category">
+                <option value="all">All Categories</option>
+                <option value="universities">Universities</option>
+                <option value="documents">Document Types</option>
+                <option value="procedures">Procedures</option>
+            </select>
+            
+            <select name="location" id="search-location">
+                <option value="all">All Locations</option>
+                <option value="manila">Manila</option>
+                <option value="quezon">Quezon City</option>
+                <option value="makati">Makati</option>
+                <!-- More locations -->
+            </select>
+        </div>
+    </form>
+    
+    <div class="search-suggestions">
+        <h4>Popular Searches:</h4>
+        <div class="suggestion-tags">
+            <a href="#" class="tag">Transcript of Records</a>
+            <a href="#" class="tag">Diploma</a>
+            <a href="#" class="tag">Certificate of Grades</a>
+            <a href="#" class="tag">Good Moral Character</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

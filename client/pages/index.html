@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acassist - University Help Wiki</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/components/navbar.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/search.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/search.js" defer></script>
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../assets/images/logos/acassist-logo.png" alt="Acassist Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Universities</a>
+                        <div class="dropdown-content">
+                            <a href="pages/universities/arellano.html">Arellano University</a>
+                            <a href="pages/universities/pup.html">Polytechnic University of the Philippines</a>
+                            <a href="pages/universities/ust.html">University of Santo Tomas</a>
+                            <a href="pages/universities/dlsu.html">De La Salle University</a>
+                            <a href="pages/universities/up.html">University of the Philippines</a>
+                        </div>
+                    </li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your Guide to University Procedures</h1>
+            <p>Find step-by-step guides for common university procedures and requirements</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Search for a procedure or university...">
+                    <button type="submit">
+                        <img src="../assets/images/icons/search.png" alt="Search">
+                    </button>
+                </form>
+                <div id="search-results" class="search-results"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Universities Section -->
+    <section class="universities">
+        <div class="container">
+            <h2>Featured Universities</h2>
+            <div class="university-cards">
+                <div class="university-card">
+                    <img src="../assets/images/logos/arellano-logo.png" alt="Arellano University">
+                    <h3>Arellano University</h3>
+                    <p>Find guides for enrollment, document requests, and more at Arellano University.</p>
+                    <a href="pages/universities/arellano.html" class="btn">View Procedures</a>
+                </div>
+                
+                <div class="university-card">
+                    <img src="../assets/images/logos/pup-logo.png" alt="PUP">
+                    <h3>Polytechnic University of the Philippines</h3>
+                    <p>Learn how to navigate PUP's academic processes and requirements.</p>
+                    <a href="pages/universities/pup.html" class="btn">View Procedures</a>
+                </div>
+                
+                <div class="university-card">
+                    <img src="../assets/images/logos/ust-logo.png" alt="UST">
+                    <h3>University of Santo Tomas</h3>
+                    <p>Guides for UST students on enrollment, document requests, and campus services.</p>
+                    <a href="pages/universities/ust.html" class="btn">View Procedures</a>
+                </div>
+                
+                <div class="university-card">
+                    <img src="../assets/images/logos/dlsu-logo.png" alt="DLSU">
+                    <h3>De La Salle University</h3>
+                    <p>Everything DLSU students need to know about university procedures.</p>
+                    <a href="pages/universities/dlsu.html" class="btn">View Procedures</a>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="#" class="btn btn-outline">View All Universities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Procedures Section -->
+    <section class="procedures">
+        <div class="container">
+            <h2>Popular Procedures</h2>
+            <div class="procedure-cards">
+                <div class="procedure-card">
+                    <div class="procedure-icon">
+                        <img src="../assets/images/icons/document.png" alt="Document">
+                    </div>
+                    <h3>Getting a True Copy of Grades</h3>
+                    <p>Learn how to request official transcripts and grade documents.</p>
+                    <a href="../../pages/procedures/true-copy.html" class="btn btn-sm">Read Guide</a>
+                </div>
+                
+                <div class="procedure-card">
+                    <div class="procedure-icon">
+                        <img src="../assets/images/icons/report.png" alt="Report">
+                    </div>
+                    <h3>Reporting an Incident</h3>
+                    <p>Steps to properly document and report campus incidents.</p>
+                    <a href="pages/procedures/incident-report.html" class="btn btn-sm">Read Guide</a>
+                </div>
+                
+                <div class="procedure-card">
+                    <div class="procedure-icon">
+                        <img src="../assets/images/icons/enrollment.png" alt="Enrollment">
+                    </div>
+                    <h3>Online Enrollment Guide</h3>
+                    <p>Step-by-step instructions for online enrollment processes.</p>
+                    <a href="pages/procedures/online-enrollment.html" class="btn btn-sm">Read Guide</a>
+                </div>
+                
+                <div class="procedure-card">
+                    <div class="procedure-icon">
+                        <img src="../assets/images/icons/scholarship.png" alt="Scholarship">
+                    </div>
+                    <h3>Applying for Scholarships</h3>
+                    <p>How to find and apply for scholarship opportunities.</p>
+                    <a href="pages/procedures/scholarships.html" class="btn btn-sm">Read Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Students Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial">
+                    <p>"Acassist saved me so much time figuring out how to get my transcript. The step-by-step guide was clear and accurate!"</p>
+                    <div class="student-info">
+                        <img src="assets/images/testimonials/student1.jpg" alt="Student">
+                        <div>
+                            <h4>Maria Santos</h4>
+                            <p>Arellano University</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>"I was completely lost about how to report an incident until I found this site. The PUP-specific instructions made it so easy!"</p>
+                    <div class="student-info">
+                        <img src="assets/images/testimonials/student2.jpg" alt="Student">
+                        <div>
+                            <h4>John Reyes</h4>
+                            <p>PUP Manila</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Get the latest updates on university procedures and new guides</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <div src="../client/components/footer.html"></div>
+
+    <script src="../client/components/footer.html"></script>
+
+    <script src="assets/js/components/carousel.js"></script>
+</body>
+</html>

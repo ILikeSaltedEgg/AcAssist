@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arellano University | Document Retrieval</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <main class="container university-page">
+        <section class="university-header">
+            <img src="../../assets/images/universities/arellano-logo.png" alt="Arellano University Logo" class="university-logo">
+            <div class="university-info">
+                <h1>Arellano University</h1>
+                <p>Founded in 1938, Arellano University is one of the most established educational institutions in the Philippines.</p>
+                <div class="university-contact">
+                    <p><strong>Main Campus:</strong> 2600 Legarda St, Sampaloc, Manila, 1008</p>
+                    <p><strong>Phone:</strong> (02) 8735-8903</p>
+                    <p><strong>Email:</strong> records@arellano.edu.ph</p>
+                    <p><strong>Website:</strong> <a href="https://www.arellano.edu.ph" target="_blank">www.arellano.edu.ph</a></p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="document-retrieval">
+            <h2>Document Retrieval Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Transcript of Records</h3>
+                    <p>Processing Time: 3-5 working days</p>
+                    <p>Fee: ₱300 per copy</p>
+                    <a href="#" class="btn-secondary">View Requirements</a>
+                </div>
+                <div class="service-card">
+                    <h3>Diploma</h3>
+                    <p>Processing Time: 5-7 working days</p>
+                    <p>Fee: ₱500 per copy</p>
+                    <a href="#" class="btn-secondary">View Requirements</a>
+                </div>
+                <div class="service-card">
+                    <h3>Certification of Grades</h3>
+                    <p>Processing Time: 2-3 working days</p>
+                    <p>Fee: ₱200 per copy</p>
+                    <a href="#" class="btn-secondary">View Requirements</a>
+                </div>
+                <!-- More services -->
+            </div>
+        </section>
+        
+        <section class="document-request-procedure">
+            <h2>How to Request Documents</h2>
+            <div class="procedure-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Complete the Request Form</h3>
+                        <p>Download and fill out the document request form or visit the Registrar's Office to obtain one.</p>
+                        <a href="#" class="btn-outline">Download Form</a>
+                    </div>
+                </div>
+                <!-- More steps -->
+            </div>
+        </section>
+        
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordions">
+                <!-- Accordion items -->
+                <div class="accordion">
+                    <div class="accordion-header">Can someone else request documents on my behalf?</div>
+                    <div class="accordion-content">
+                        <p>Yes, but they need to present an authorization letter signed by you and a valid ID. Additional requirements may apply depending on the document type.</p>
+                    </div>
+                </div>
+                <!-- More FAQ items -->
+            </div>
+        </section>
+    </main>
+    
+    <div id="footer-container"></div>
+    
+    <script src="../../js/script.js"></script>
+    <script>
+        loadComponent("header-container", "../../components/header.html");
+        loadComponent("footer-container", "../../components/footer.html");
+        
+        // Initialize accordions
+        initAccordions();
+    </script>
+</body>
+</html>
